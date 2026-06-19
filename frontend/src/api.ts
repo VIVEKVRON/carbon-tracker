@@ -1,4 +1,4 @@
-const BASE_URL = 'http://localhost:8080/api/v1';
+const BASE_URL = 'https://carbon-tracker-api-r1dx.onrender.com/';
 
 export const getAuthToken = () => localStorage.getItem('token');
 export const setAuthToken = (token: string) => localStorage.setItem('token', token);
