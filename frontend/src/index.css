@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-background: #F9FAFB;
+  --color-surface: #FFFFFF;
+  --color-accent: #059669;
+  --font-sans: "Inter", "Roboto", sans-serif;
+}
+
+@layer base {
+  body {
+    @apply bg-background text-slate-800 font-sans antialiased m-0 p-0;
+  }
+}
+
+@utility glassmorphism {
+  @apply bg-surface/80 backdrop-blur-md border border-white/20 shadow-sm;
+}
+
+.dark {
+  --color-background: #0f172a !important;
+  --color-surface: #1e293b !important;
+  --color-white: #1e293b !important;
+  --color-slate-800: #f8fafc !important;
+  --color-slate-600: #cbd5e1 !important;
+  --color-slate-500: #94a3b8 !important;
+  --color-slate-400: #64748b !important;
+  --color-slate-200: #334155 !important;
+  --color-slate-100: #475569 !important;
+  --color-slate-50: #0f172a !important;
+  color-scheme: dark;
+}
