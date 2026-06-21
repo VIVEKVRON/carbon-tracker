@@ -111,8 +111,9 @@ export const ActivityLogs: React.FC = () => {
                   <td className="py-3 px-4 text-right">
                     <button 
                       onClick={() => handleDelete(log.id)}
-                      className="p-2 text-slate-400 hover:text-red-500 hover:bg-red-50 rounded-lg transition-colors"
+                      className="p-2 text-slate-600 hover:text-red-500 hover:bg-red-50 rounded-lg transition-colors"
                       title="Delete log"
+                      aria-label="Delete log"
                     >
                       <Trash2 size={16} />
                     </button>

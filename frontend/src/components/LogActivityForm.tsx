@@ -64,10 +64,10 @@ export const LogActivityForm: React.FC<Props> = ({ onLog }) => {
               category === 'TRANSPORTATION' ? 'Distance (km)' :
               category === 'ENERGY' ? 'Electricity (kWh)' : 'Meals count'
             }
-            className="w-full pl-4 pr-12 py-3 bg-white border border-slate-200 rounded-xl focus:ring-2 focus:ring-accent/20 focus:border-accent outline-none transition-all duration-200 text-slate-800 placeholder-slate-400 font-medium"
+            className="w-full pl-4 pr-12 py-3 bg-white border border-slate-200 rounded-xl focus:ring-2 focus:ring-accent/20 focus:border-accent outline-none transition-all duration-200 text-slate-800 placeholder-slate-600 font-medium"
             required
           />
-          <span className="absolute right-4 top-1/2 -translate-y-1/2 text-sm text-slate-400 font-medium">
+          <span className="absolute right-4 top-1/2 -translate-y-1/2 text-sm text-slate-600 font-medium">
             {category === 'TRANSPORTATION' ? 'km' : category === 'ENERGY' ? 'kWh' : 'meals'}
           </span>
         </div>

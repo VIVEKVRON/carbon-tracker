@@ -42,7 +42,7 @@ export const Settings: React.FC = () => {
       
       <div className="space-y-8">
         <section>
-          <h4 className="text-sm font-bold text-slate-400 uppercase tracking-wider mb-4">Account</h4>
+          <h4 className="text-sm font-bold text-slate-600 uppercase tracking-wider mb-4">Account</h4>
           <div className="bg-white/50 rounded-xl p-4 border border-slate-100 flex items-center justify-between">
             <div className="flex items-center gap-4">
               <div className="bg-accent/10 p-3 rounded-full text-accent">
@@ -57,7 +57,7 @@ export const Settings: React.FC = () => {
         </section>
 
         <section>
-          <h4 className="text-sm font-bold text-slate-400 uppercase tracking-wider mb-4">Preferences</h4>
+          <h4 className="text-sm font-bold text-slate-600 uppercase tracking-wider mb-4">Preferences</h4>
           <div className="bg-white/50 rounded-xl border border-slate-100 divide-y divide-slate-100">
             
             <div className="p-4 flex items-center justify-between">
