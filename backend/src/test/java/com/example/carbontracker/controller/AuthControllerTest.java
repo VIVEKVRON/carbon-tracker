@@ -49,4 +49,26 @@ public class AuthControllerTest {
                 .content(objectMapper.writeValueAsString(request)))
                 .andExpect(status().isCreated());
     }
+
+    @Test
+    public void testRegisterDuplicateEmail() throws Exception {
+        RegisterRequest request = new RegisterRequest("test@example.com", "password123");
+
+        when(userRepository.findByEmail(request.email())).thenReturn(Optional.of(new User()));
+
+        mockMvc.perform(post("/api/v1/auth/register")
+                .contentType(MediaType.APPLICATION_JSON)
+                .content(objectMapper.writeValueAsString(request)))
+                .andExpect(status().isConflict());
+    }
+
+    @Test
+    public void testRegisterInvalidInput() throws Exception {
+        RegisterRequest request = new RegisterRequest("invalid-email", "pass");
+
+        mockMvc.perform(post("/api/v1/auth/register")
+                .contentType(MediaType.APPLICATION_JSON)
+                .content(objectMapper.writeValueAsString(request)))
+                .andExpect(status().isBadRequest());
+    }
 }

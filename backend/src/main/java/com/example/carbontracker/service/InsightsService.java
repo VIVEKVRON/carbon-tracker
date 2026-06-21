@@ -9,6 +9,9 @@ import org.springframework.stereotype.Service;
 import java.time.LocalDateTime;
 import java.util.*;
 
+/**
+ * Service responsible for analyzing user carbon logs and generating personalized reduction insights.
+ */
 @Service
 @RequiredArgsConstructor
 public class InsightsService {

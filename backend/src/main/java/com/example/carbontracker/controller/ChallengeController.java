@@ -15,6 +15,9 @@ import org.springframework.web.server.ResponseStatusException;
 import java.util.List;
 import java.util.UUID;
 
+/**
+ * REST controller for managing eco-challenges and user enrollments.
+ */
 @RestController
 @RequestMapping("/api/v1/challenges")
 @RequiredArgsConstructor

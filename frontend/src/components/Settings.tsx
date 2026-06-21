@@ -19,7 +19,7 @@ export const Settings: React.FC = () => {
         if (payload.sub) {
           setEmail(payload.sub);
         }
-      } catch (e) {
+      } catch {
         // ignore parsing errors
       }
     }

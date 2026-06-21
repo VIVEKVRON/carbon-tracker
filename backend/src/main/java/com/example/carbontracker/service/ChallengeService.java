@@ -18,6 +18,9 @@ import java.util.List;
 import java.util.UUID;
 import java.util.stream.Collectors;
 
+/**
+ * Service responsible for managing eco-challenges and tracking user enrollments.
+ */
 @Service
 @RequiredArgsConstructor
 public class ChallengeService {

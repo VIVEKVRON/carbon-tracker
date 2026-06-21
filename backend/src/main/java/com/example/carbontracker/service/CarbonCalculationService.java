@@ -3,6 +3,9 @@ package com.example.carbontracker.service;
 import com.example.carbontracker.model.Category;
 import org.springframework.stereotype.Service;
 
+/**
+ * Service responsible for calculating CO2 emissions based on raw activity values and categories.
+ */
 @Service
 public class CarbonCalculationService {
 

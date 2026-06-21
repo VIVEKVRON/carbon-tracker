@@ -9,6 +9,9 @@ import java.time.format.DateTimeFormatter;
 import java.util.List;
 import java.util.UUID;
 
+/**
+ * Service responsible for formatting and exporting user carbon logs into CSV format.
+ */
 @Service
 @RequiredArgsConstructor
 public class DataExportService {

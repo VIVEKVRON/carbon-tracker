@@ -26,6 +26,9 @@ import java.time.LocalDateTime;
 import java.util.List;
 import java.util.UUID;
 
+/**
+ * REST controller for managing carbon emission logs, analytics, and insights.
+ */
 @RestController
 @RequestMapping("/api/v1/tracker")
 @RequiredArgsConstructor
